@@ -1,0 +1,358 @@
+<html>
+
+<head>
+    <title>Saturn</title>
+
+    <link href="cssmain.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700|Josefin+Sans|VT323" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- Splash screen -->
+    <div id='splash' class='sectioning'>
+        <div class='navbar'></div>
+        <div class='coldiv sec-content'>
+            <img id='logo' src='res/logo2.png'>
+            <p class="jumbo">SATURN</p>
+            <img id='all' src='res/all.png'>
+            <p class="sub-title">AI powered Multimodal Public Transportation Platform</p>
+            <div class="rowdiv" style="margin-top:20px">
+                <p style="color: #ffc107">Pioneer Updates : </p>
+                <a class="btn btn-outline-warning topbutton" href="index.html#section-1">Idea</a>
+                <a class="btn btn-outline-warning topbutton" href="week1.html">Week1</a>
+                <a class="btn btn-outline-warning topbutton" href="week2.html">Week2</a>
+                <a class="btn btn-outline-warning topbutton" href="week3.html">Week3</a>
+                <a class="btn btn-outline-warning topbutton" href="week4.html">Week4</a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Problem screen -->
+    <div id='section-1' class='sectioning'>
+        <div class='coldiv sec-content'>
+            <p class="title">What is the meaning of this?</p>
+            <p class="sub-title">{Problem Statement / Motivation}</p>
+            <div class="rowdiv" style="width:100%">
+                <div class="coldiv" style="flex:1">
+                    <p style="padding-top:20px; text-align: justify"><span style="color: #c0392b ">Traffic</span> is a horrific problem in an
+                        otherwise amazing city like Bangalore (can be extrapolated to other fast-growing cities of the
+                        world). An average Bangalorean spends xmins everyday on the road, cursing his/her fate.
+                        Additionally, y of the 15 most <span style="color: #c0392b ">polluted cities</span> in the world
+                        are in India. We believe that adoption of public transport is key to solving the tyranny of
+                        traffic and to ease pressure on the environent. We were wondering why we ourselves don't use
+                        public transport and 3 key issues stood out - uncertainty around <span
+                            style="color: #c0392b ">ETA</span>, uncertainty around <span
+                            style="color: #c0392b ">occupancy/comfort</span>, uncertainty around <span
+                            style="color: #c0392b ">last-mile connectivity</span>. We think that if we eliminate all the
+                        3 barriers and provide a seamless Uber-like experience, public transport becomes a no-brainer,
+                        given that it is already <span style="color: #c0392b ">5x-10x cheaper</span>. People are also
+                        used to the seamless payment experience most ride-hailing services provide. We want to do
+                        something about this.<br><br><b>That's where Saturn comes in.</b></p>
+                </div>
+                <div class="coldiv" style="flex:1; text-align: center">
+
+                    <img class="img-fluid icon" src='res/hourglass (1).png'>
+                    <p>Uncertainity in <br>ETA</p>
+
+                    <img class="img-fluid icon" src='res/passenger.png'>
+                    <p>Uncertainity in <br>Occupancy / Comfort</p>
+
+                    <img class="img-fluid icon" src='res/route.png'>
+                    <p>Uncertainity in <br>Last-Mile Connectivity</p>
+
+                    <p style="padding-top:10px"><b>Issues with public transport, currently</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Solution screen -->
+    <div id='section-2' class='sectioning'>
+        <div class='coldiv sec-content'>
+            <p class="title">What do you propose?</p>
+            <p class="sub-title">{Solution / Philosophy / (Unnecessarily) Grand Vision}</p>
+            <div class="rowdiv" style="width:100%">
+                <div class="coldiv" style="flex:1">
+                    <div class="rowdiv">
+                        <p style="padding-top:20px; flex:4;  text-align: justify">
+                            <b>Real-time Data Streams + Journey Planning + Online Payment</b><br>Imagine entering a
+                            destination on the Saturn app, similar to ride hailing apps. Saturn creates <span
+                                style="color: #c0392b ">end-to-end piece-wise journeys</span> for you, with <span
+                                style="color: #c0392b ">ETA (from GPS data), occupancy index (from the Deep Learning
+                                Module or ticketing info.) and cost</span>. You can choose a journey optimizing for
+                            time, money or your comfort. Saturn uses Buses and Metros for most of the journey and
+                            auto-rickshaws for inter-modal and first/last mile connectivity. As your bus ride is ending,
+                            Saturn <span style="color: #c0392b ">automatically books</span> an auto-rickshaw so that
+                            when you get off the bus, Payment at public transport is done through NFC readers at the
+                            door, or by scanning QR codes. Payment to auto-rickshaw drivers is done via UPI (P2P
+                            payment).</p>
+                        <img class="img-fluid icon2" src='res/placeholder.png'>
+                    </div>
+                    <div class="rowdiv">
+                            <img class="img-fluid icon2" src='res/angry.png'> 
+                            <p style="padding-top:20px; flex:4;  text-align: justify">
+
+                            <b>Meter Mélé</b><br>The first 2 bottlenecks can be solved with the above strategies. But if
+                            you've ever been to India, you know how hazardous talking to an angry auto-rickshaw driver
+                            can be. We don't think it's entirely their fault. Same fares during peak and off-peak times
+                            can be widely inefficient. So, they resort to driving up fares knowing fully well you
+                            <span style="color: #c0392b ">cannot haggle with more than 2-3 auto-drivers</span>. We need a <span style="color: #c0392b ">Game-theoretically sound</span> strategy
+                            to align incentives of all parties. What if you could <span style="color: #c0392b ">scale haggling</span>? Meter Mélé (translated
+                            from Kannada; means 'on top of the meter', a common way for drivers to ask for extra money
+                            on top of the fare) is that solution. Customers enter the maximum Meter Mélé amount they are
+                            willing to pay. This <span style="color: #c0392b ">bid is broadcast</span> to all nearby drivers starting from 0 to
+                            the maximum amount, with time. Drivers are incentivised to accept the fare that
+                            they consider is fair, especially considering other drivers will be doing exactly that. We
+                            think this will <span style="color: #c0392b ">converge to 'true fares'</span> in the market creating a win-win for everyone.</p>
+                    </div>
+                    <div class="rowdiv">
+                        <p style="padding-top:20px; flex:4; text-align: justify">
+                            <b>Government/ Activists' Dashboard</b><br>Currently activists and the govt. have
+                            <span style="color: #c0392b ">unbelievably little data</span> to optimize routes, increase infrastructure, etc. We think the data
+                            generated from Saturn will fill this void effectively. Apps can be built on top of data
+                            aggregations for officials and activists to consume.</p>
+
+                        <img class="img-fluid icon2" src='res/home.png'>
+                    </div>
+                </div>
+                <!-- <div class="coldiv" style="flex:1; text-align: center">
+    
+                            <img class="img-fluid icon" src='res/hourglass (1).png'>
+                            <p>Uncertainity in <br>ETA</p>
+    
+                            <img class="img-fluid icon" src='res/passenger.png'>
+                            <p>Uncertainity in <br>Occupancy / Comfort</p>
+    
+                            <img class="img-fluid icon" src='res/route.png'>
+                            <p>Uncertainity in <br>Last-Mile Connectivity</p>
+    
+                            <p style="padding-top:10px"><b>Issues with public transport, currently</b></p>
+                        </div> -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Components screen -->
+    <div id='section-3' class='sectioning'>
+        <div class='coldiv sec-content'>
+            <p class="title">Cool. What all are you building/doing?</p>
+            <p class="sub-title">{Talk is cheap; Show me the Code (Features, for now)}</p>
+            <div class="rowdiv">
+                <div class="coldiv feature-outer" style="width:100%">
+                    <p style="padding-top:30px"><b>Customer App</b></p>
+                    <div class="rowdiv">
+                        <div class='feature-box'>                     
+                            <img class="img-fluid icon3" src='res/gps.png'>
+                            <p>Journey Planning between places</p>
+                        </div>
+
+                       
+                        <div class='feature-box'>                    
+                                <img class="img-fluid icon3" src='res/online-payment.png'>
+                                <p>Online Payment</p>
+                        </div>
+                    </div>
+                    <div class="rowdiv">
+                           
+                            <div class='feature-box'>                    
+                                    <img class="img-fluid icon3" src='res/application.png'>
+                                    <p>Check ETA, Comfort, Fare and select Journey. Place Meter Mele bids</p>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="coldiv feature-outer" style="width:100%">
+                    <p style="padding-top:30px"><b>Driver / Bus App</b></p>
+                    <div class="rowdiv">
+                        <div class='feature-box'>                     
+                            <img class="img-fluid icon3" src='res/car.png'>
+                            <p>View & Accept customer Bids</p>
+                        </div>
+
+                        <div class='feature-box'>                    
+                                <img class="img-fluid icon3" src='res/public-transport.png'>
+                                <p>Transmit GPS & Occupancy data</p>
+                        </div>
+                    </div>
+                    <div class="rowdiv">
+                            <div class='feature-box'>                     
+                                <img class="img-fluid icon3" src='res/chip.png'>
+                                <p>(Privacy first) Deep Learning module camera for Occupancy detection</p>
+                            </div>
+                        </div>
+                </div>
+
+
+                <div class="coldiv  feature-outer" style="width:100%">
+                    <p style="padding-top:30px"><b>Server</b></p>
+                    <div class="rowdiv">
+                        <div class='feature-box'>                     
+                            <img class="img-fluid icon3" src='res/destination.png'>
+                            <p>Journey Construction Algorithm</p>
+                        </div>
+
+                        <div class='feature-box'>                    
+                                <img class="img-fluid icon3" src='res/cloud-computing.png'>
+                                <p>Poll for data</p>
+                        </div>
+                    </div>
+                    <div class="rowdiv">
+                            <div class='feature-box'>                     
+                                <img class="img-fluid icon3" src='res/station.png'>
+                                <p>Broadcasting Algorithm</p>
+                            </div>
+    
+                            <div class='feature-box'>                    
+                                    <img class="img-fluid icon3" src='res/server.png'>
+                                    <p>Create Aggregates</p>
+                            </div>
+                        </div>
+                </div>
+                
+            </div>
+
+            <div class="rowdiv">
+                    <div class="coldiv feature-outer " style="width:100%">
+                        <p style="padding-top:30px"><b>Govt Dashboard</b></p>
+                        <div class="rowdiv">
+                            <div class='feature-box'>                     
+                                <img class="img-fluid icon3" src='res/geography.png'>
+                                <p>Identify Demand-Supply Mismatch</p>
+                            </div>
+    
+                        </div>
+                        <div class="rowdiv">
+                                <div class='feature-box'>                     
+                                    <img class="img-fluid icon3" src='res/predictive-chart.png'>
+                                    <p>Smart Routing & Infrastructure Insights</p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="coldiv feature-outer " style="width:100%">
+                            <p style="padding-top:30px"><b>PR</b></p>
+                            <div class="rowdiv">
+                                <div class='feature-box'>                     
+                                    <img class="img-fluid icon3" src='res/data.png'>
+                                    <p>Make Landing Page with Info and FAQs</p>
+                                </div>
+                                <div class='feature-box'>                     
+                                        <img class="img-fluid icon3" src='res/top.png'>
+                                        <p>Speak to Bangalore Transport (Bus/Metro) Dept. Officials</p>
+                                </div>
+        
+                            </div>
+                            <div class="rowdiv">
+                                    <div class='feature-box'>                     
+                                        <img class="img-fluid icon3" src='res/handshake.png'>
+                                        <p>Speak to interested Private companies (NEC, etc.)</p>
+                                    </div>
+                                    <div class='feature-box'>                     
+                                            <img class="img-fluid icon3" src='res/feedback.png'>
+                                            <p>User Feedback from both customers and drivers</p>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+    </div>
+
+
+<!-- About screen -->
+<div id='section-4' class='sectioning'>
+        <div class='coldiv sec-content'>
+            <div>
+                    <p class="title">Who are you guys?</p>
+                    <p class="sub-title">{We're The Bayesian Conspiracy}</p>
+                    
+            </div>
+                <div class="rowdiv" style="flex:1">
+                    <div class="coldiv">
+                            <img class="img-fluid icon4" src='res/vivek.jpeg'>
+                            <p>Vivek</p>
+                    </div>
+                    <div class="coldiv">
+                            <img class="img-fluid icon4" src='res/sree.jpeg'>
+                            <p>Sreejith</p>
+                    </div>
+                </div>
+                <p style="padding-top: 30px; text-align: justify">
+                        We're The Bayesian Conspiracy. We were many different people at many different points of time, going by many different collective names. Currently we're Sreejith and Vivek. We're friends from IIT Kharagpur, based out of Bangalore. We love science, and we love programming and we love hackathons. We believe, as many people do, that technology is the tool with which we'll truly scale solutions to a global audience. In 2019 we've won 4/4 hackathons. We've built product hacks for messaging, insurance, interior design, decentralized trade, personal medication management and multimodal transportation. We've worked on technologies like Augmented Reality,  IoT, blockchain, Deep Learning, chatbots, voicebots etc. apart from the usual suspects (Node, React, Python etc). When not doing hackathons, we work on a host of personal side projects about things that amuse us or fight with each other about how to implement Universal Basic Income. With a combined 3+ years experience in the ride-hailing industry, we believe we can contribute to solving traffic and urban congestion :)
+                </p>
+        </div>
+    </div>
+
+<!-- FAQs screen -->
+<div id='section-5' class='sectioning'>
+        <div class='coldiv sec-content'>
+            <p class="title">FAQs</p>
+            <p class="sub-title">{What about these things, huh?}</p>
+            <div class="coldiv" style="width:100%; margin-top: 30px">
+                <p><b>1. How is this different from Google Maps?</b><br>
+                    Saturn is basically Google Maps Navigation on steroids. Google does not mix modes in journeys, Saturn will. You will also get real time ETA, which is not there in Google currently. Also, Google has no idea about occupancy which is vital to people adopting ore public transport. Saturn also has an incentive aligning feature : Meter mele, which we believe is a crucial part this system working. Saturn is different from Google Maps because it is much much much more than Google Maps.
+                </p>
+                <br>
+                <p><b>2. How is this different from Uber/Ola?</b><br>
+                    Saturn will fundamentally be open. Saturn will pay P2P; no obfuscation from drivers. Also, Saturn will drive traffic towards public transport, and not away from it. We want Saturn to be very similar to the seamless Uber experience we're all used to, though :) 
+                </p>
+                <br>
+                <p><b>3. Isn't having a camera on a bus dangerous?</b><br>
+                    We're as concerned of the Big Brother govt as you are. The deep learning module is privacy first - the evaluation will happen on the device and no image is ever uploaded. The code will also be in public domain.
+                </p>
+                <br>
+                <p><b>4. Can you both really complete this?</b><br>
+                    We think so. We're fairly quick in getting MVPs out. We've worked on technologies like Augmented Reality,  IoT, blockchain, Deep Learning, chatbots, voicebots etc. apart from the usual suspects (Node, React, Python etc). We think we should be able to build most features except payments (that'll require interfacing with a bank and other legal shiz). Scheduling meetings with officials will be tricky, and we want to focus on this.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id='footer'>
+        <div class="rowdiv">
+        <div>
+            <p class='title'>Did you find this interesting? </p>
+            <p>If you did, do reach out to us at <br>vivekaithal44[at]gmail[dot]com/+919916733098<br>mailz4sreejith[at]gmail[dot]com/+919745250216</p>
+        </div>
+        <div class="rowdiv">
+                <div class="coldiv">
+                        <a class="btn btn-dark botbutton" href="index.html#section-1">Idea</a>
+                        <a class="btn btn-dark botbutton" href="week1.html">Week1</a>
+                        <a class="btn btn-dark botbutton" href="week2.html">Week2</a>
+                        <a class="btn btn-dark botbutton" href="week3.html">Week3</a>
+                        <a class="btn btn-dark botbutton" href="week4.html">Week4</a>
+         
+                </div>
+                <div class="coldiv">
+                        <a class="btn btn-dark botbutton" href="index.html#section-2">Solution</a>
+                        <a class="btn btn-dark botbutton" href="index.html#section-3">Features</a>
+                        <a class="btn btn-dark botbutton" href="index.html#section-4">About Us</a>
+                        <a class="btn btn-dark botbutton" href="index.html#section-5">FAQs</a>
+                        <a class="btn btn-dark botbutton" href="index.html#footer">Contact</a>
+         
+                </div>
+        </div>
+        </div>
+
+        <div style="font-size: 10px">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    </div>
+    
+
+</body>
+
+</html>

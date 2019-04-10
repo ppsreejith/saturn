@@ -1,0 +1,149 @@
+body{
+    font-family: 'Fira Sans' !important;
+    color: #000;
+    margin: 0px;
+    /* font-size: 1.5vh !important; */
+}
+p{
+    margin: 0px !important;
+}
+
+
+.jumbo{
+    font-family: 'Josefin Sans';
+    font-size: 100px;
+    /* height: 500px; */
+    color: #ffffff;
+}
+
+.title{
+    font-family: 'Josefin Sans';
+    font-size: 30px;
+
+}
+
+.sub-title{
+    font-family: 'VT323';
+    font-size: 22px;
+}
+
+.sectioning{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.rowdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* width: 100%; */
+}
+
+
+.coldiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* width: 100%; */
+}
+
+.sec-content{
+    width: 60%;
+    left: 20%;
+}
+
+.topbutton{
+    margin: 5px;    
+}
+
+.botbutton{
+    margin: 5px;
+    color: #aaa !important;  
+}
+
+
+.icon{
+    width: 70px;
+    margin-top: 20px;
+}
+
+
+.icon3{
+    width: 70px;
+}
+
+.icon2{
+    flex: 1;
+    width: 150px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.icon4{
+    flex: 1;
+    width: 150px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 75px;
+}
+
+
+
+#splash{
+    background: #333;
+    height: 700px;
+    color: #fff;
+}
+
+#section-2{
+    background: #333;
+    color: #fff;
+}
+#section-4{
+    background: #333;
+    color: #fff;
+}
+#footer{
+    background: #343a40;
+    height: 300px;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+#logo{
+    width: 200px; 
+    margin-bottom: 20px;
+}
+
+#all{
+    width: 500px;
+}
+
+
+.feature-box{
+    margin: 5px;
+    /* border: 1px #ddd solid; */
+    border-radius: 4px;
+    text-align: center;
+    font-size: 12px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.feature-outer{
+    border: 1px #ddd solid;
+
+    padding: 10px;
+    border-radius: 4px;
+    margin: 5px;
+}
