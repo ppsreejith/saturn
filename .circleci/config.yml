@@ -1,0 +1,27 @@
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-javascript/ for more details
+#
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:7.10
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      # deploy!
+      - run: ssh -o StrictHostKeyChecking=no circleci@ppsreejith.net "mkdir -p /home/circleci/web/saturn"
+      - run: scp -o StrictHostKeyChecking=no -r . circleci@ppsreejith.net:/home/circleci/web/saturn
+
+workflows:
+  version: 2
+  main:
+    jobs:
+    - build:
+        filters:
+          branches:
+            only: master
