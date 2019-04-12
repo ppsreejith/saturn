@@ -15,7 +15,7 @@ jobs:
 
       # deploy!
       - run: ssh -o StrictHostKeyChecking=no circleci@metermele.app "mkdir -p /home/circleci/web/saturn"
-      - run: scp -o StrictHostKeyChecking=no -r . circleci@metermele.app:/home/circleci/web/saturn
+      - run: scp -o StrictHostKeyChecking=no -r ./ circleci@gmetermele.app:/home/circleci/web/saturn
 
 workflows:
   version: 2
