@@ -2,6 +2,8 @@
 
 <head>
     <title>Saturn</title>
+    <meta charset="UTF-8">
+
     <meta property="og:url"           content="https://vivekaithal.co/saturn" />
     <meta property="og:type"          content="website" />
     <meta property="og:title"         content="Saturn" />
@@ -23,6 +25,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
 
 </head>
 
@@ -52,8 +57,125 @@
         <div class='coldiv sec-content'>
             <p class="title">Week 1 Updates</p>
             <!-- <p class="sub-title">{Product and PR}</p> -->
-            <div class="rowdiv" style="width:100%">
-                ETA 1 Week ...
+            <div class="coldiv" style="width:100%; align-items: flex-start ">
+                <p><b>Tasks that were Planned for Week 1</b></p>
+                <ul>
+                        <li>PR</li>
+                        <ul>
+                            <li>Make a landing page with detailed information about the project and its scope <span class="chip">Done<i class="fas fa-check"></i></span></li>
+                            <li>Answer FAQs from feedback of previous week's Pioneer voting <span class="chip">Done<i class="fas fa-check"></i></span></li>
+                            <li>Contact NEC (Japanese MNC that manages Govt. transport fleet for a lot of cities in India, and is interested in this Idea) and figure out how we can collaborate <span class="chip">Done<i class="fas fa-check"></i></span></li>
+                        </ul>
+                    <li>Product</li>
+                    <ul>
+                        <li>React Native customer App, integrated with Maps. Screens for various stages of booking - journey planning to Meter Mélé <span class="chip">Done<i class="fas fa-check"></i></span></li>
+                        <li>React Native driver App, integrated with Maps. Screens for various stages of one ride - Meter Mélé bid acceptance, navigation, ride completion <span class="chip">Done<i class="fas fa-check"></i></span></li>
+                        <li>Use dummy data (for bus routes and ETAs) and wire everything up on the server (Node) to simulate actual bookings <span class="chip">Done<i class="fas fa-check"></i></span></li>
+                        
+                    </ul>
+                    
+
+                </ul>
+                <br><br>
+                <p><b>(&#x1F608 is in the) Details</b></p>
+                <ul>
+                        <li>PR</li>
+                        <ul>
+                            <li>
+                                <p>Landing Page</p>
+                                <p>From last week's feedback we realized that we could explain the idea in greater detail, since it has so many moving parts. You can find the problem statement, solution we propose, exact features we intend to build, and a brief note about us here : <a href='https://metermele.app'>https://meterele.app</a>. We shall use this space to update detailed weekly progress and other things we might find important to communicate.</p>
+                            </li>
+                            <li>
+                                <p>FAQs</p>
+                                <p>Last week's feedback had a bunch of questions that we wanted to answer. Check out the FAQs here : <a href='https://metermele.app#section-5'>https://meterele.app#section-5</a>. We shall be using this section to answer more questions that come up during the next month.</p>
+                            </li>
+                            <li>
+                                <p>Outreach - NEC</p>
+                                <p>We contacted NEC, a Japanese company that operates the bus fleet platform, in a bunch of cities like Ahmedabad, Hubli, etc. and had over 4 hours of discussion with them. They are extremely excited to test run Saturn platform and we have our first collaboration deal! :D . We are working on a mutually agreeable set of features that we want to test on actual users. We're meeting the officials from NEC on the last weekend of April, to demo the platform. We're also finalizing a data sharing agreement.</p>
+                            </li>
+                        </ul><br><br>
+                        <li>Product</li>
+                        <ul>
+                                <li>
+                                    <p>Customer App</p>
+                                    <p>We've built a react native app that does the following : Enter destination (Google maps places integrations done), displaying journey options, selecting the preferred journey, entering the meter mele amount, entire auto-rickshaw booking flow, journey completion.</p>
+                                    <div class="rowdiv">
+                                        <figure class="figure">
+                                            <img src="capp/1.jpeg" class="figure-img img-fluid rounded screenshots">
+                                            <figcaption class="figure-caption text-center">Classic maps interface that everyone is used to</figcaption>
+                                        </figure>
+                                        <figure class="figure">
+                                                <img src="capp/2.jpeg" class="figure-img img-fluid rounded screenshots">
+                                                <figcaption class="figure-caption text-center">Enter the Destinattion you wish to reach</figcaption>
+                                        </figure>
+                                        <figure class="figure">
+                                                <img src="capp/3.jpeg" class="figure-img img-fluid rounded screenshots">
+                                                <figcaption class="figure-caption text-center">Competing journeys are computed and displayed</figcaption>
+                                        </figure>
+                                        <figure class="figure">
+                                                <img src="capp/4.jpeg" class="figure-img img-fluid rounded screenshots">
+                                                <figcaption class="figure-caption text-center">Explore the different journeys and select the best suited one</figcaption>
+                                        </figure>
+                                                  <!-- <img src='capp/1.jpeg'> -->
+                                    </div>
+                                    <br>
+                                    <div class="rowdiv">
+                                            <figure class="figure">
+                                                <img src="capp/5.jpeg" class="figure-img img-fluid rounded screenshots">
+                                                <figcaption class="figure-caption text-center">Enter the maximum Meter mele amount</figcaption>
+                                            </figure>
+                                            <figure class="figure">
+                                                    <img src="capp/6.jpeg" class="figure-img img-fluid rounded screenshots">
+                                                    <figcaption class="figure-caption text-center">Broadcasting underway</figcaption>
+                                            </figure>
+                                            <figure class="figure">
+                                                    <img src="capp/7.jpeg" class="figure-img img-fluid rounded screenshots">
+                                                    <figcaption class="figure-caption text-center">Driver Assigned, similar to Uber/Ola flow</figcaption>
+                                            </figure>
+                                        </div>
+                                </li>
+                                
+
+                                <li>
+                                        <p>Driver App</p>
+                                        <p>Even here, we've built a react native app. The features built are primiarily for autorickshaw drivers. On the app, they can view all the bids (total meter cost + metermele extra cost) and accept the bid that suits their estimation of a "fair fare". Once they accept a bid, it follows the same ride-hailing flow we're all used to.</p>
+                                        <div class="rowdiv">
+                                            <figure class="figure">
+                                                <img src="dapp/1.jpeg" class="figure-img img-fluid rounded screenshots">
+                                                <figcaption class="figure-caption text-center">Initial Driver Screen</figcaption>
+                                            </figure>
+                                            <figure class="figure">
+                                                    <img src="dapp/2.jpeg" class="figure-img img-fluid rounded screenshots">
+                                                    <figcaption class="figure-caption text-center">Bids being populated</figcaption>
+                                            </figure>
+                                            <figure class="figure">
+                                                    <img src="dapp/3.jpeg" class="figure-img img-fluid rounded screenshots">
+                                                    <figcaption class="figure-caption text-center">On accepting you can call the customer or navigate to the place</figcaption>
+                                            </figure>
+                                            <figure class="figure">
+                                                    <img src="dapp/4.jpeg" class="figure-img img-fluid rounded screenshots">
+                                                    <figcaption class="figure-caption text-center">Once you reach the pickup point, the driver is only bound to wait for a certain time</figcaption>
+                                                </figure>
+                                                <figure class="figure">
+                                                        <img src="dapp/5.jpeg" class="figure-img img-fluid rounded screenshots">
+                                                        <figcaption class="figure-caption text-center">Can end ride once complete</figcaption>
+                                                </figure>
+                                                      <!-- <img src='capp/1.jpeg'> -->
+                                        </div>
+                                        <div class="rowdiv">
+                                               
+                                            </div>
+                                    </li>
+                                
+                                    
+
+                                <li>
+                                    <p>Server</p>
+                                    <p>Both these apps have been wired to the server and with dummy data, can go through the entire flow, like how a regular user would.</p>
+                                </li>
+                            </ul>
+                </ul>
+                
             </div>
         </div>
     </div>

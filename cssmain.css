@@ -147,3 +147,16 @@ p{
     border-radius: 4px;
     margin: 5px;
 }
+
+
+.chip{
+    color: white;
+    background: #27ae60;
+    padding: 3px;
+    border-radius: 3px;
+    font-size: 10px;
+}
+
+.screenshots{
+    /* height: 200px; */
+}
