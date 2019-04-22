@@ -12,7 +12,6 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-
     <link href="cssmain.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700|Josefin+Sans|VT323" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -26,6 +25,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
 
 </head>
 
@@ -55,8 +57,97 @@
         <div class='coldiv sec-content'>
             <p class="title">Week 2 Updates</p>
             <!-- <p class="sub-title">{Product and PR}</p> -->
-            <div class="rowdiv" style="width:100%">
-                ETA 1 Week ...
+            <div class="coldiv" style="width:100%; align-items: flex-start ">
+                <p><b>Tasks that were Planned for Week 2</b></p>
+                <ul>
+                        <li>PR</li>
+                        <ul>
+                            <li>Get Ahmedabad city data from NEC, integrate live data <span class="chip">Done<i class="fas fa-check"></i></span></li>
+                            <li>Contact Banks for payments partnership <span class="chip">Done<i class="fas fa-check"></i></span></li>
+                        </ul>
+                    <li>Product</li>
+                    <ul>
+                        <li>Refine UI for Customer+driver app, integrate navigation (upload video here of one complete booking <span class="chip">Done<i class="fas fa-check"></i></span></li>
+                        <li>Deep Learning model on server (for occupancy) <span class="chip">Done<i class="fas fa-check"></i></span></li>
+                        <li>V0 Govt. Dashboard <span class="chip">Done<i class="fas fa-check"></i></span></li>
+                        
+                    </ul>
+                    
+
+                </ul>
+                <br><br>
+                <p><b>(&#x1F608 is in the) Details</b></p>
+                <ul>
+                        <li>PR</li>
+                        <ul>
+                            <li>
+                                <p>Outreach - NEC</p>
+                                <p>We have an agreement for a pilot project in Ahmedabad, India. We are integrating with their APIs to obtain bus routing and ETA details. We also received aggregate historical ticketing information, from which we plan to predict occupancy until the deep learning module is actually deployed.</p>
+                            </li>
+                            <li>
+                                    <p>Outreach - ICICI Bank</p>
+                                    <p>We are in talks with the payments team of ICICI bank, to use their infrastructure for UPI payments. We are presenting them a pitch in the first week of May, to be Saturn's exclusive payments partner</p>
+                                </li>
+                        </ul><br><br>
+                        <li>Product</li>
+                        <ul>
+                                <li>
+                                    <p>Customer /Driver App</p>
+                                    <p>We refined some glitches in the apps and have the end to end booking flow UI working</p>
+                                    <div class="rowdiv">
+                                        <figure class="figure">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/sIm_kkNuWu8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            <figcaption class="figure-caption text-center">Classic maps interface that everyone is used to</figcaption>
+                                        </figure>
+                                    </div>
+                                </li>
+                                
+
+                                <li>
+                                        <p>Deep Learning for Occupancy (On the Server)</p>
+                                        <p>We implemented the YOLO v3 paper in pytorch, and trained it on a subset of the COCO dataset. We've deployed it on the server, and have wired it up to a mode in the driver app. The model has 94% acccuracy in identifying people in the frame, and their location in the image. It has ~99.6% accuracy in predicting class of occcupancy ({empty, few people, crowded, heavily crowded} classes)</p>
+                                        <div class="rowdiv">
+                                            <figure class="figure">
+                                                <img src="res/dl1.jpg" class="figure-img img-fluid rounded screenshots">
+                                                <figcaption class="figure-caption text-center">Evaluation on image from internet</figcaption>
+                                            </figure>
+                                            <figure class="figure">
+                                                    <img src="res/dl2.jpeg" class="figure-img img-fluid rounded screenshots">
+                                                    <figcaption class="figure-caption text-center">Evaluation on live image from camera</figcaption>
+                                            </figure>
+                                            
+                                        </div>
+                                        <div class="rowdiv">
+                                               
+                                            </div>
+                                    </li>
+                                
+                                    
+
+                                <li>
+                                    <p>Server</p>
+                                    <p>Began implementing the Graphhopper routing algorithm for most optimal bus route identification</p>
+                                </li>
+
+                                <li>
+                                        <p>V0 Government Dashboard</p>
+                                        <p>We built the V0 of the government dashboard - comprising of heatmaps and route efficiency maps</p>
+                                        <div class="rowdiv">
+                                            <figure class="figure">
+                                                <img src="res/govt1.png" class="figure-img img-fluid rounded screenshots">
+                                            </figure>
+                                            <figure class="figure">
+                                                    <img src="res/govt2.png" class="figure-img img-fluid rounded screenshots">
+                                            </figure>
+                                            
+                                        </div>
+                                        <div class="rowdiv">
+                                               
+                                            </div>
+                                    </li>
+                            </ul>
+                </ul>
+                
             </div>
         </div>
     </div>
