@@ -93,7 +93,7 @@ window.onload = function () {
                 success: function (result) {
                     console.log(JSON.parse(result));
                     var journey_time = JSON.parse(result)['journeys'][0];
-                    var journey_comfort = JSON.parse(result)['journeys'][JSON.parse(result)['journeys'].length-2];
+                    var journey_comfort = JSON.parse(result)['journeys'][1];
                     
                     
                     console.log(journey_time);
