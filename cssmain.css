@@ -160,3 +160,43 @@ p{
 .screenshots{
     /* height: 200px; */
 }
+
+
+#mapid { 
+    height: 300px;
+    width: 800px; 
+}
+
+
+#searchdiv > *{
+    margin: 2px;
+}
+
+.journey-title{
+    font-weight: 800;
+}
+
+.journey-subtitle{
+    font-weight: 200;
+    font-size: 11;
+}
+
+.journey-options{
+    display: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px !important;
+    border: 2px #333 solid;
+}
+
+.expectations{
+    font-size: 13px;
+}
+
+.icon-imgs{
+    width: 50px;
+}
+
+.prompts{
+    display: none;
+}

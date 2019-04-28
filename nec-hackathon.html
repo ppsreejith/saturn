@@ -20,8 +20,7 @@
    crossorigin=""/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -34,7 +33,8 @@
  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
  integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
  crossorigin=""></script>
-        <script src='./jsmain.js'></script>
+ <script src='./jsmain.js'></script>
+        <script src='nec/Polyline.encoded.js'></script>
         
 
 </head>
@@ -70,7 +70,23 @@
                         <input class="form-control" id="search_from" type="text" placeholder="Where are you travelling from?">
                         <input class="form-control" id="search_to" type="text" placeholder="Where do you want to go?">
                         <div id="mapid"></div>
-
+                        <div id='time' class='journey-options'>
+                            <p class='journey-title'>Journey 1 <span class='journey-subtitle'>{Optimized for time}</span></p>
+                            <p class='expectations'>Expected Journey Time : <span id='time-time'></span></p>
+                            <p class='expectations'>Expected Journey Distance : <span id='time-distance'></span></p>
+                            <!-- <p class='expectations'>Expected Comfort Level : <span id='time-comfort'></span></p> -->
+                            <div id='time-options' class="rowdiv"></div>
+                            
+                        </div>
+                        <div id='comfort' class='journey-options'>
+                                <p class='journey-title'>Journey 2  <span class='journey-subtitle'>{Optimized for comfort}</span></p>
+                                <p class='expectations'>Expected Journey Time : <span id='comfort-time'></span></p>
+                                <p class='expectations'>Expected Journey Distance : <span id='comfort-distance'></span></p>
+                            <!-- <p class='expectations'>Expected Comfort Level : <span id='comfort-comfort'></span></p> -->
+                            <div id='comfort-options' class="rowdiv"></div>
+                        
+                        </div>
+                        <div id='prompt-buttons'></div>
                     
 
                 </div>
@@ -85,14 +101,14 @@
             <p>If you did, do reach out to us at <br>vivekaithal44[at]gmail[dot]com/+919916733098<br>mailz4sreejith[at]gmail[dot]com/+919745250216</p>
         </div>
         <div class="rowdiv">
-                <div class="coldiv">
+                <!-- <div class="coldiv">
                         <a class="btn btn-dark botbutton" href="index.html#section-1">Idea</a>
                         <a class="btn btn-dark botbutton" href="week1.html">Week1</a>
                         <a class="btn btn-dark botbutton" href="week2.html">Week2</a>
                         <a class="btn btn-dark botbutton" href="week3.html">Week3</a>
                         <a class="btn btn-dark botbutton" href="week4.html">Week4</a>
          
-                </div>
+                </div> -->
                 <div class="coldiv">
                         <a class="btn btn-dark botbutton" href="index.html#section-2">Solution</a>
                         <a class="btn btn-dark botbutton" href="index.html#section-3">Features</a>
