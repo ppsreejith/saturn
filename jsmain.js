@@ -87,7 +87,7 @@ window.onload = function () {
     
     
             $.ajax({
-                url: "http://mock-server.ppsreejith.net/routes/" + locs.from.lat + "," + locs.from.lng + "/" + locs.to.lat + "," + locs.to.lng,
+                url: "https://mock-server.ppsreejith.net/routes/" + locs.from.lat + "," + locs.from.lng + "/" + locs.to.lat + "," + locs.to.lng,
                 type: 'GET',
                 crossOrigin: true,
                 success: function (result) {
