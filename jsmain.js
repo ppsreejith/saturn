@@ -48,7 +48,7 @@ window.onload = function () {
         $('#'+id+'-prompt').html('');
         $('#'+id+'-options').append('<div><img class="icon-imgs" src="nec/family.png"></div>');
 
-        $('#prompt-buttons').append("<div class='btn btn-dark prompts' id='start'>Start Journey</div>");
+        // $('#prompt-buttons').append("<div class='btn btn-dark prompts' id='start'>Start Journey</div>");
         
         var currLeg = 0;
         var currRoute = journey.Segments[0].RoutePath.route_code;
@@ -65,11 +65,11 @@ window.onload = function () {
 
         for (var j =0;j<=currLeg;j++){
             $('#'+id+'-options').append('<div><img class="icon-imgs" src="res/bus (2).png"></div>');
-            $('#prompt-buttons').append("<div class='btn btn-dark prompts' id='bus-'"+j+">Begin Bus Leg "+(j+1)+"</div>");
+            // $('#prompt-buttons').append("<div class='btn btn-dark prompts' id='bus-'"+j+">Begin Bus Leg "+(j+1)+"</div>");
         }
 
 
-        $('#prompt-buttons').append("<div class='btn btn-dark prompts'>End Journey</div>");
+        // $('#prompt-buttons').append("<div class='btn btn-dark prompts'>End Journey</div>");
         $('#'+id+'-options').append('<div><img class="icon-imgs" src="res/rickshaw.png"></div>');
     
         

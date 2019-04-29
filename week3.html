@@ -5,37 +5,37 @@
     <meta charset="UTF-8">
 
 
-    <meta property="og:url"           content="https://vivekaithal.co/saturn" />
-    <meta property="og:type"          content="website" />
-    <meta property="og:title"         content="Saturn" />
-    <meta property="og:description"   content="AI powered Multimodal Public Transportation Platform" />
-    <meta property="og:image"         content="https://dl.dropboxusercontent.com/s/9a9fovucoax0m6m/saturn.png" />
+    <meta property="og:url" content="https://vivekaithal.co/saturn" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Saturn" />
+    <meta property="og:description" content="AI powered Multimodal Public Transportation Platform" />
+    <meta property="og:image" content="https://dl.dropboxusercontent.com/s/9a9fovucoax0m6m/saturn.png" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    
+
     <link href="cssmain.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700|Josefin+Sans|VT323" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
-   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
-   crossorigin=""/>
+        integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+        crossorigin="" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjkoj_RcUffLE-6rCvaOEi_iKMqWCPW-8&libraries=places"></script>
-         <!-- Make sure you put this AFTER Leaflet's CSS -->
- <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
- integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
- crossorigin=""></script>
-        <script src='./jsmain.js'></script>
-        
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjkoj_RcUffLE-6rCvaOEi_iKMqWCPW-8&libraries=places"></script>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+        integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+        crossorigin=""></script>
+    <script src='./jsmain.js'></script>
+    <script src='nec/Polyline.encoded.js'></script>
+
 
 </head>
 
@@ -48,7 +48,7 @@
             <p class="jumbo">SATURN</p>
             <img id='all' src='res/all.png'>
             <p class="sub-title">AI powered Multimodal Public Transportation Platform</p>
-            <!-- <div class="rowdiv" style="margin-top:20px">
+            <div class="rowdiv" style="margin-top:20px">
                 <p style="color: #ffc107">Pioneer Updates : </p>
                 <a class="btn btn-outline-warning topbutton" href="index.html#section-1">Idea</a>
                 <a class="btn btn-outline-warning topbutton" href="week1.html">Week1</a>
@@ -56,57 +56,174 @@
                 <a class="btn btn-outline-warning topbutton" href="week3.html">Week3</a>
                 <a class="btn btn-outline-warning topbutton" href="week4.html">Week4</a>
 
-            </div> -->
+            </div>
         </div>
     </div>
 
     <!-- Problem screen -->
     <div id='section-1' class='sectioning'>
         <div class='coldiv sec-content'>
+            <p class="title">Week 3 Updates</p>
+            <p>This was a kick-ass week for us! We integrated with real time bus position APIs, implemented a complex routing algorithm (with hops), demo-ed the POC to NEC (who are super happy and excited), and have a deploment planned for 2 weeks from now \m/! We're also meeting Bangalore bus & metro officials next week, and ICICI payments team on May 14th. Both apps are fully built. We're currently focussing on creating a good government dashboard and insight engine.</p>
+            <!-- <p class="sub-title">{Product and PR}</p> -->
+            <div class="coldiv" style="width:100%; align-items: flex-start ">
+                <p><b>Tasks that were Planned for Week 3</b></p>
+                <ul>
+                    <li>PR</li>
+                    <ul>
+                        <li>Contact Bangalore Bus/Metro officials<span class="chip">Done<i
+                                    class="fas fa-check"></i></span></li>
+                        <li>Integrate with ICICI for payments<span class="chip">Done<i class="fas fa-check"></i></span>
+                        </li>
+                        <li>Demo POC to NEC<span class="chip">Done<i class="fas fa-check"></i></span></li>
+                    </ul>
+                    <li>Product</li>
+                    <ul>
+                        <li>Finalize bus/metro routing and autorickshaw broadcasting algo (show demo here)<span
+                                class="chip">Done<i class="fas fa-check"></i></span></li>
+                        <li>Deep Learning model on mobile phone <span class="chip">Done<i
+                                    class="fas fa-check"></i></span></li>
+                        <li>Compute predicted ETA and occupancy from historical data<span class="chip">Done<i
+                                    class="fas fa-check"></i></span></li>
+
+                    </ul>
+
+
+                </ul>
+                <br><br>
+                <p><b>(&#x1F608 is in the) Details</b></p>
+                <ul>
+                    <li>PR</li>
+                    <ul>
+                        <li>
+                            <p>Outreach - Bangalore Bus & Metro transport officials</p>
+                            <p>We have contacted both bus and metro rail officials, and have a meeting scheduled with
+                                both of them to discuss our proposal further!</p>
+                        </li>
+                        <li>
+                            <p>Outreach - ICICI Bank</p>
+                            <p>We have integrated with ICICI test APIs for QR based payment on buses and UPI payments
+                                for Autorickshaws (with the 'Mandate' feature of committing to a payment in the future,
+                                to ensure trust of service between users and drivers, similar to smart contracts on the
+                                blockchain). </p>
+                        </li>
+                        <li>
+                            <p>Outreach - NEC Demo</p>
+                            <p>We demo-ed the POC to Mr. Akihiko (Head of NEC labs, India) and his team, and they are super impressed. We are going ahead with a small scale deployment in Ahmedabad in 2 weeks.</p><p>Here are pictures they took, for proof that we indeed met them :)</p>
+                                <div class="rowdiv">
+                                        <figure class="figure">
+                                            <img src="nec/nech1.jpeg" class="figure-img img-fluid rounded screenshots">
+                                        </figure>
+                                        <figure class="figure">
+                                                <img src="nec/nech2.jpeg" class="figure-img img-fluid rounded screenshots">
+                                        </figure>
+                                        
+                                    </div>
+                        </li>
+                        
+                    </ul><br><br>
+                    <li>Product</li>
+                    <ul>
+                        <li>
+                            <p>Routing Algorithm : Demo Time!</p>
+                            <p>We using the day's timetable + predicted ETA + Bus-stop data to evaluate the optimal
+                                routes with 1 hop max (for user experience). Then, we use real-time ETA from GPS, and
+                                ticketing information to rank the routes based on time and comfort. We have a demo!<br></p>
+                            <p>Since the data is from Ahmedabad only, use the following locations to test (or any in
+                                Ahmedabad, really. This is connected to the real time APIs and actually works! :D
+                                )<br>From : <b>Prahlad Nagar, Ahmedabad, Gujarat, India</b><br>To : <b>Kankaria Lake,
+                                    Kankaria, Ahmedabad, Gujarat</b><br>Copy paste the above locations into the
+                                searchbox below, and select the locations.</p>
+                            <div class="rowdiv" style="width:100%">
+                                <div class="coldiv" id='searchdiv' style="align-items: stretch">
+                                    <input class="form-control" id="search_from" type="text"
+                                        placeholder="Where are you travelling from?">
+                                    <input class="form-control" id="search_to" type="text"
+                                        placeholder="Where do you want to go?">
+                                    <div id="mapid"></div>
+                                    <div id='time' class='journey-options'>
+                                        <p class='journey-title'>Journey 1 <span class='journey-subtitle'>{Optimized for
+                                                time}</span></p>
+                                        <p class='expectations'>Expected Journey Time : <span id='time-time'></span></p>
+                                        <p class='expectations'>Expected Journey Distance : <span
+                                                id='time-distance'></span></p>
+                                        <!-- <p class='expectations'>Expected Comfort Level : <span id='time-comfort'></span></p> -->
+                                        <div id='time-options' class="rowdiv"></div>
+
+                                    </div>
+                                    <div id='comfort' class='journey-options'>
+                                        <p class='journey-title'>Journey 2 <span class='journey-subtitle'>{Optimized for
+                                                comfort}</span></p>
+                                        <p class='expectations'>Expected Journey Time : <span id='comfort-time'></span>
+                                        </p>
+                                        <p class='expectations'>Expected Journey Distance : <span
+                                                id='comfort-distance'></span></p>
+                                        <!-- <p class='expectations'>Expected Comfort Level : <span id='comfort-comfort'></span></p> -->
+                                        <div id='comfort-options' class="rowdiv"></div>
+
+                                    </div>
+                                    <div id='prompt-buttons'></div>
+
+
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <li>
+                            <p>Deep Learning model on mobile phone </p>
+                            <p>The model works, completely offline, on the phone, at super high framerate!<br> Checkout
+                                Sreejith's blog post on high performance image classification, on React Native:
+                                <a href="https://medium.com/@namar/high-performance-image-classification-with-react-native-336db0a96cd">https://medium.com/@namar/high-performance-image-classification-with-react-native-336db0a96cd</a>
+                            </p>
+                        </li>
+
+
+
+                    </ul>
+                </ul>
+
+            </div>
             <!-- <p class="title">Week 3 Updates</p> -->
             <!-- <p class="sub-title">{Product and PR}</p> -->
-            <div class="rowdiv" style="width:100%">
-                <div class="coldiv" id='searchdiv' style="align-items: stretch">
-                        <input class="form-control" id="search_from" type="text" placeholder="Where are you travelling from?">
-                        <input class="form-control" id="search_to" type="text" placeholder="Where do you want to go?">
-                        <div id="mapid"></div>
 
-                    
-
-                </div>
-            </div>
         </div>
     </div>
 
     <div id='footer'>
         <div class="rowdiv">
-        <div>
-            <p class='title'>Did you find this interesting? </p>
-            <p>If you did, do reach out to us at <br>vivekaithal44[at]gmail[dot]com/+919916733098<br>mailz4sreejith[at]gmail[dot]com/+919745250216</p>
-        </div>
-        <div class="rowdiv">
+            <div>
+                <p class='title'>Did you find this interesting? </p>
+                <p>If you did, do reach out to us at
+                    <br>vivekaithal44[at]gmail[dot]com/+919916733098<br>mailz4sreejith[at]gmail[dot]com/+919745250216
+                </p>
+            </div>
+            <div class="rowdiv">
                 <div class="coldiv">
-                        <a class="btn btn-dark botbutton" href="index.html#section-1">Idea</a>
-                        <a class="btn btn-dark botbutton" href="week1.html">Week1</a>
-                        <a class="btn btn-dark botbutton" href="week2.html">Week2</a>
-                        <a class="btn btn-dark botbutton" href="week3.html">Week3</a>
-                        <a class="btn btn-dark botbutton" href="week4.html">Week4</a>
-         
+                    <a class="btn btn-dark botbutton" href="index.html#section-1">Idea</a>
+                    <a class="btn btn-dark botbutton" href="week1.html">Week1</a>
+                    <a class="btn btn-dark botbutton" href="week2.html">Week2</a>
+                    <a class="btn btn-dark botbutton" href="week3.html">Week3</a>
+                    <a class="btn btn-dark botbutton" href="week4.html">Week4</a>
+
                 </div>
                 <div class="coldiv">
-                        <a class="btn btn-dark botbutton" href="index.html#section-2">Solution</a>
-                        <a class="btn btn-dark botbutton" href="index.html#section-3">Features</a>
-                        <a class="btn btn-dark botbutton" href="index.html#section-4">About Us</a>
-                        <a class="btn btn-dark botbutton" href="index.html#section-5">FAQs</a>
-                        <a class="btn btn-dark botbutton" href="index.html#footer">Contact</a>
-         
+                    <a class="btn btn-dark botbutton" href="index.html#section-2">Solution</a>
+                    <a class="btn btn-dark botbutton" href="index.html#section-3">Features</a>
+                    <a class="btn btn-dark botbutton" href="index.html#section-4">About Us</a>
+                    <a class="btn btn-dark botbutton" href="index.html#section-5">FAQs</a>
+                    <a class="btn btn-dark botbutton" href="index.html#footer">Contact</a>
+
                 </div>
-        </div>
+            </div>
         </div>
 
-        <div style="font-size: 10px">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        <div style="font-size: 10px">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from
+            <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a
+                href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC
+                3.0 BY</a></div>
     </div>
-    
+
 
 </body>
 
