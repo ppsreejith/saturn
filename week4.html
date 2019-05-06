@@ -4,11 +4,11 @@
     <title>Saturn</title>
     <meta charset="UTF-8">
 
-    <meta property="og:url"           content="https://vivekaithal.co/saturn" />
-    <meta property="og:type"          content="website" />
-    <meta property="og:title"         content="Saturn" />
-    <meta property="og:description"   content="AI powered Multimodal Public Transportation Platform" />
-    <meta property="og:image"         content="https://dl.dropboxusercontent.com/s/9a9fovucoax0m6m/saturn.png" />
+    <meta property="og:url" content="https://vivekaithal.co/saturn" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Saturn" />
+    <meta property="og:description" content="AI powered Multimodal Public Transportation Platform" />
+    <meta property="og:image" content="https://dl.dropboxusercontent.com/s/9a9fovucoax0m6m/saturn.png" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -55,41 +55,270 @@
         <div class='coldiv sec-content'>
             <p class="title">Week 4 Updates</p>
             <!-- <p class="sub-title">{Product and PR}</p> -->
-            <div class="rowdiv" style="width:100%">
-                ETA 1 Week ...
+            <div class="coldiv" style="width:100%; align-items: flex-start ">
+                <p>This was yet another incredible week, for us! We've finalized the pilot date with NEC, to be May
+                    13th, 7 days from today. They're paying us <b>~$3500</b> for the pilot phase study; we're super
+                    thrilled about that! We believe that trust is a fundamental aspect of ride-hailing. So, after
+                    numerous rounds of talks with ICICI Bank, we've designed a trust-less framework using UPI 2.0
+                    (mandates and promise of payment), which rewards good actors and penalizes bad actors on the
+                    platform. We're flying down to Mumbai on May 14th, to demo the app (and the trust-less payments
+                    framework) to top executives from ICICI, and a few VCs. Contingent on them accepting the solution,
+                    they've agreed to pay us <b>~$7000</b> for our efforts during the POC (<b>taking us to ~$10.5K in
+                        the green! :D</b>). </p><br><br>
+                <p><b>Tasks that were Planned for Week 4</b></p>
+                <ul>
+                    <li>PR</li>
+                    <ul>
+                        <li>Finalize deployment details with NEC <span class="chip">Done<i
+                                    class="fas fa-check"></i></span></li>
+                        <li>Finalize ICICI demo and terms <span class="chip">Done<i class="fas fa-check"></i></span>
+                        </li>
+                        <li>Contact Bangalore bus & metro officials <span class="chip">Done<i
+                                    class="fas fa-check"></i></span></li>
+                    </ul>
+                    <li>Product</li>
+                    <ul>
+                        <li>Complete deployment ready app <span class="chip">Done<i class="fas fa-check"></i></span>
+                        </li>
+                        <li>Feature Video? <span class="chip">Done<i class="fas fa-check"></i></span></li>
+                        <li>Design and implement a trust-less payments framework, using UPI 2.0 (An immediate payments
+                            system by the Central Bank of India) <span class="chip">Done<i
+                                    class="fas fa-check"></i></span></li>
+
+                    </ul>
+
+
+                </ul>
+                <br><br>
+                <p><b>(&#x1F608 is in the) Details</b></p>
+                <ul>
+                    <li>PR</li>
+                    <ul>
+                        <li>
+                            <p><b>NEC Engagement</b></p>
+                            <p>All details have been finalized. We're deploying Saturn in Ahmedabad from May 13th, on a
+                                small scale. We're hiring a few auto rickshaws to be on the platform. They've paid us
+                                ~$3500 for the pilot study. The expected outcome of the study is to understand how users
+                                view Saturn and to build a case to present to the Government of India, to install GPS in
+                                all buses and to share real-time ticketing information.</p>
+                        </li>
+                        <li>
+                            <p><b>ICICI Engagement</b></p>
+                            <p>We're presenting the POC to top executives from ICICI bank and a few VCs, on May 14th in
+                                Mumbai. Contingent on them giving a go-ahead on the app, they're paying us ~$7000. </p>
+                        </li>
+                        <li>
+                            <p><b>Outreach - Bangalore Metro and Bus officials</b></p>
+                            <p>We are in touch with the Managing Director of Bangalore Metro Transportation Corporation,
+                                who is impressed by the idea and excited about the prospect of implementing it in
+                                Bangalore. We're in talks with officials that work for him, and are scheduling meetings
+                                post our NEC pilot and ICICI demo.</p>
+                        </li>
+                    </ul><br><br>
+                    <li>Product</li>
+                    <ul>
+                        <li>
+                            <p><b>Deployment ready app</b></p>
+                            <p>The app is deployment ready, with login, and real-time monitoring</p>
+                        </li><br>
+                        <li>
+                            <p><b>Feature Video</b></p>
+                            <div class="rowdiv">
+                                <figure class="figure">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sIm_kkNuWu8"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <figcaption class="figure-caption text-center">Feature Demo</figcaption>
+                                </figure>
+                            </div>
+                        </li><br>
+                        <li>
+                            <p><b>Trust-less p2p payments framework using UPI 2.0 mandates</b></p>
+                            <p>Highlighted below is the framework we've designed. <b>TL;DR</b> : We use UPI mandates to
+                                create payment promises from driver to the customer, and customer to the driver. If one
+                                of them violates the contract (doesn't turn up, etc), then the other person gets the
+                                money. Otherwise it is nullified. We believe that aligning monetary incentives with
+                                future payment-promises will lead to the desired co-operative behaviour.</p><br>
+
+                            <b>Objectives</b>
+
+                            <p>This document attempts to detail a trust-less payments system built over UPI 2.0 Mandates
+                                for transport. Prerequisite information and current context has been added to aid
+                                readers.</p><br>
+
+
+                            <b>Current Customer-Driver interaction</b>
+                            <ol>
+                                <li>Customers can find Rickshaws parked in a queue near bus/railway stations, popular
+                                    locations etc.</li>
+                                <li>They can also find Rickshaws by waving their hand at Rickshaws moving on the road to
+                                    signal their intent to negotiate a journey.</li>
+                                <li>A customer who wants to travel approaches the first Rickshaw and starts negotiating
+                                    with the driver.</li>
+                                <li>If negotiations fail, they move onto the next Rickshaw and resume their
+                                    negotiations.</li>
+                                <li>The customer travels in the first Rickshaw with which negotiations are successful.
+                                </li>
+                            </ol><br>
+
+                            <b>Proposed Customer-Driver interaction</b>
+                            <ol>
+                                <li>The customer broadcasts their intention to go from place-A to place-B. They also
+                                    signal the maximum amount they are willing to pay above the standard meter fare.
+                                </li>
+                                <li>The bid is seen by drivers near the customer. On the driver’s app, they see the fare
+                                    slowly rise over one minute from the standard meter fare to the maximum amount the
+                                    user is willing to pay.</li>
+                                <li>The first driver to accept the bid gets the bid and will arrive at the agreed upon
+                                    pickup place to pick up the customer</li>
+                                <li>After dropping off the customer, the customer pays the agreed upon price, and the
+                                    trip ends.</li>
+                            </ol><br>
+
+                            <b>Technical Flow</b>
+                            <ol>
+                                <li>The customer broadcasts a bid which is a message which contains the following
+                                    information:
+                                    <ul>
+                                        <li>Pickup and destination location - from where the customer expects to be
+                                            picked up, and where they expect to be dropped off.</li>
+                                        <li>Extra Fare - how much the customer is willing to pay above the meter fare.
+                                        </li>
+                                        <li>Customer UPI ID - the UPI ID of the customer.</li>
+                                    </ul>
+                                </li>
+                                <li>The driver who’s bid is accepted responds to the customer with the extra fare that
+                                    they are willing to accept, their UPI ID, and a mandate token that the customer can
+                                    verify. The customer verifies the token:
+                                    <ul>
+                                        <li>If the customer finds that the token is invalid, they report it to the
+                                            server who verifies the
+                                            mandate and penalizes the driver if it is found that the token is invalid.
+                                            Else they penalize the
+                                            customer.</li>
+                                        <li>If the customer finds that the token is valid, they can accept the bid by
+                                            responding to the
+                                            driver with their own mandate.</li>
+                                    </ul>
+                                </li>
+                                <li>The driver then verifies the mandate sent by the customer:
+                                    <ul>
+                                        <li>If the driver finds that the token is invalid, they report it to the server
+                                            who verifies the
+                                            mandate and penalizes the customer accordingly. Else they penalize the
+                                            driver.</li>
+                                        <li>If the driver finds that the token is valid, they can accept the bid and
+                                            start the trip.</li>
+                                    </ul>
+                                </li>
+                                <li>Once the bid is agreed upon and verified by both parties, they are both required to
+                                    arrive at the
+                                    pickup location within 5 minutes. Both the customer’s and driver’s GPS are
+                                    constantly streamed to
+                                    the server. Either one can cancel the booking if the terms of the contract are
+                                    violated.</li>
+                                <li>When one party detects the other party has violated the contract, they can revoke
+                                    their own mandate
+                                    and execute the other party’s mandate.</li>
+                                <li>If one party detects that their mandate has been executed unfairly while the other
+                                    party has revoked
+                                    their mandate, they can appeal to the server.
+                                    <ul><li>If the 5 minutes are not up, the other party is penalized.</li>
+                                    <li>If party-1 complains:
+                                    <ul>
+                                        <li>If there are anomalies in party-2’s GPS, party-2 is penalized.</li>
+                                            <li>If party-2 isn’t at the pickup location, party-2 is penalized.</li>
+                                                <li>If there are anomalies in party-1’s GPS, party-1 is penalized.</li>
+                                                    <li>If party-1 isn’t at the pickup location, party-1 is penalized.</li>
+                                                        <li>If both parties are at the pickup location, party-2 is penalized.</ul></li></ul>
+                                <li>If both parties are at the pickup location and they cannot find each other, they are
+                                    free to revoke
+                                    their own mandate if the 5 minutes are up.</li>
+                                <li>Once they both arrive, they can start the trip with a successful OTP verification.
+                                    At that moment
+                                    both parties cancel their mandates and the trip starts. Both parties see the fare to
+                                    be paid on the
+                                    app and can execute the transaction via UPI signed intent or cash.</li>
+
+                            </ol><br>
+
+                            <b>Verifying Mandate Revocation/Execution</b><br>
+
+                            If either the customer or the driver feels that they were wronged on a mandate, they can
+                            prove to the
+                            server that a given mandate was not executed fairly by sharing with the server the
+                            parameters needed to
+                            verify a transaction which the server can then use to verify the result of that transaction
+                            and compare
+                            against the required value.<br>
+
+
+                            <br><b>Penalizing Invalid Mandate Revocation/Execution</b><br>
+
+                            When penalizing a party for acting unfairly, the server can detect contract violations using
+                            the method
+                            above. If it detects there has been an unfair act committed, it penalizes the party in
+                            question in the
+                            following way:
+
+                            1. It takes some amount from the security deposit of the cheating party and gives it to the
+                            aggrieved
+                            party.
+                            2. It reduces the score of the cheating party which will reduce their chances of securing a
+                            ride in the
+                            future.<br>
+
+
+                            <br><b>GPS Anomaly Detection</b><br>
+
+                            By constantly tracking the GPS of the customer and driver, we can detect anomalies by
+                            comparing their
+                            GPS data against historical GPS data.
+
+                        </li>
+                    </ul>
+                </ul>
+
             </div>
         </div>
     </div>
 
+
     <div id='footer'>
         <div class="rowdiv">
-        <div>
-            <p class='title'>Did you find this interesting? </p>
-            <p>If you did, do reach out to us at <br>vivekaithal44[at]gmail[dot]com/+919916733098<br>mailz4sreejith[at]gmail[dot]com/+919745250216</p>
-        </div>
-        <div class="rowdiv">
+            <div>
+                <p class='title'>Did you find this interesting? </p>
+                <p>If you did, do reach out to us at
+                    <br>vivekaithal44[at]gmail[dot]com/+919916733098<br>mailz4sreejith[at]gmail[dot]com/+919745250216
+                </p>
+            </div>
+            <div class="rowdiv">
                 <div class="coldiv">
-                        <a class="btn btn-dark botbutton" href="index.html#section-1">Idea</a>
-                        <a class="btn btn-dark botbutton" href="week1.html">Week1</a>
-                        <a class="btn btn-dark botbutton" href="week2.html">Week2</a>
-                        <a class="btn btn-dark botbutton" href="week3.html">Week3</a>
-                        <a class="btn btn-dark botbutton" href="week4.html">Week4</a>
-         
+                    <a class="btn btn-dark botbutton" href="index.html#section-1">Idea</a>
+                    <a class="btn btn-dark botbutton" href="week1.html">Week1</a>
+                    <a class="btn btn-dark botbutton" href="week2.html">Week2</a>
+                    <a class="btn btn-dark botbutton" href="week3.html">Week3</a>
+                    <a class="btn btn-dark botbutton" href="week4.html">Week4</a>
+
                 </div>
                 <div class="coldiv">
-                        <a class="btn btn-dark botbutton" href="index.html#section-2">Solution</a>
-                        <a class="btn btn-dark botbutton" href="index.html#section-3">Features</a>
-                        <a class="btn btn-dark botbutton" href="index.html#section-4">About Us</a>
-                        <a class="btn btn-dark botbutton" href="index.html#section-5">FAQs</a>
-                        <a class="btn btn-dark botbutton" href="index.html#footer">Contact</a>
-         
+                    <a class="btn btn-dark botbutton" href="index.html#section-2">Solution</a>
+                    <a class="btn btn-dark botbutton" href="index.html#section-3">Features</a>
+                    <a class="btn btn-dark botbutton" href="index.html#section-4">About Us</a>
+                    <a class="btn btn-dark botbutton" href="index.html#section-5">FAQs</a>
+                    <a class="btn btn-dark botbutton" href="index.html#footer">Contact</a>
+
                 </div>
-        </div>
+            </div>
         </div>
 
-        <div style="font-size: 10px">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        <div style="font-size: 10px">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from
+            <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a
+                href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC
+                3.0 BY</a></div>
     </div>
-    
+
 
 </body>
 
